@@ -6,10 +6,10 @@ for i in range(10):
 for i in range(10):
     print(lista[i])
 diccionario = {'Estudiante1' : 'Luis', 'Estudiante2' : 'Isaac', 'Estudiante3' : 'Xime', 'Estudiante4' : 'Andy'} 
-print(diccionario['Estudiante1'])'''
+print(diccionario['Estudiante1']) cambio cambio cambio'''
 
 # Program make a simple calculator
-
+# Este es un cambio de prueba
 # This function adds two numbers
 def add(x, y):
     return x + y
