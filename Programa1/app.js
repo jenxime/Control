@@ -1,7 +1,10 @@
 
-function Imprimir() {
+function Registrar() {
     var name = document.getElementById('nombre').value;
-    var edad = document.getElementById('edad').value;
-    alert('bienvenido ' + name);
-    alert('tu edad es ' + edad);
+    var lastname = document.getElementById('apellido').value;
+    var edad = document.getElementById('age').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+
 }

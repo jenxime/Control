@@ -1,0 +1,9 @@
+.container {
+  border: 10px;
+  border-radius: 5px;
+}
+
+.container .row .tabla {
+  padding-left: 10%;
+  padding-top: 10%;
+}
