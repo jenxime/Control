@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 #ANCHO Y ALTO DE LA PANTALLA
-WIDTH, HEIGHT = 500, 500
+WIDTH, HEIGHT = 600, 600
 #CREACION DE LA PANTALLA
 screen = pygame.display.set_mode([WIDTH,HEIGHT]) # Set size of screen
 #COLOR DEL FONDO CASI NEGRO CASI OSCURO
@@ -12,7 +12,7 @@ BG_COLOR = (25, 25, 25) # Define background color
 screen.fill(BG_COLOR)
 
 #NUMERO CELDAS
-nX, nY =25, 25
+nX, nY =50, 50
 #DIMENSIONES CELDA
 xSize = WIDTH/nX
 ySize = HEIGHT/nY
@@ -25,18 +25,32 @@ DEAD_COLOR = (128,128,128)
 # Estado del juego Celdas vivas = 1; Celdas muertas = 0
 status = np.zeros((nX,nY)) # Intialize status of cells
 
-#AUTOMATA PALO
-status[5, 3] = 1
-status[5, 4] = 1
-status[5, 5] = 1
+# #AUTOMATA PALO
+# status[5, 3] = 1
+# status[5, 4] = 1
+# status[5, 5] = 1
 
-#AUTOMATA MOVIL
-status[21, 21] = 1
-status[22, 22] = 1
-status[22, 23] = 1
-status[21, 23] = 1
-status[20, 23] = 1
+# #AUTOMATA MOVIL
+# status[21, 21] = 1
+# status[22, 22] = 1
+# status[22, 23] = 1
+# status[21, 23] = 1
+# status[20, 23] = 1
 
+#AUTOMATA NAVE
+status[15, 15] = 1
+status[14, 16] = 1
+status[16, 15] = 1
+status[17, 15] = 1
+status[18, 15] = 1
+status[19, 16] = 1
+status[19, 17] = 1
+status[18, 18] = 1
+status[18, 18] = 1
+status[18, 18] = 1
+status[16, 19] = 1
+status[14, 18] = 1
+status[15, 19] = 1
 
 #CONTROL DE LA EJECUCION
 pauseRun = False
@@ -106,4 +120,5 @@ while running:
     pygame.display.flip()
 
 pygame.quit()
+
 
