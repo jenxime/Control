@@ -20,12 +20,12 @@
     <script src="app.js"></script>
 </head>
 
-<body>
+<body class="pt-5">
 
     <div class="container">
         <div class="row">
-            <form class="col-4 pt-3">
-                <h2 class="pt-5">Ingrese sus datos</h2>
+            <form class="formulario1 col-4 pl-5 pt-3 pb-4 pr-5" id="formulario">
+                <h2 class="pt-4">Ingrese sus datos</h2>
                 <div class="form-group">
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="name">
@@ -46,7 +46,7 @@
                     <label>Password</label>
                     <input type="password" class="form-control" id="password">
                 </div>
-                <button class="btn btn-primary" onclick=Registrar()>Registrar</button>
+                <button class="btn btn-primary" type="submit" onclick=Registrar(event)>Registrar</button>
             </form>
 
             <div class="tabla">
@@ -60,14 +60,8 @@
                             <th>Password</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
+                    <tbody id="tabla-cuerpo">
+
                     </tbody>
                 </table>
             </div>

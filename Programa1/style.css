@@ -1,9 +1,19 @@
-.container {
-  border: 10px;
-  border-radius: 5px;
-}
-
 .container .row .tabla {
   padding-left: 10%;
+  padding-right: 10%;
   padding-top: 10%;
+  border-style: double;
+  border-width: 2px;
+  border-color: black;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+.container .row .formulario1 {
+  border-style: double;
+  border-width: 2px;
+  border-color: black;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  margin: auto;
 }
