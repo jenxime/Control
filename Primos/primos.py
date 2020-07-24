@@ -10,7 +10,7 @@ def es_primo(numero):
     # En este bucle, empezamos por el dos hasta un numero anterior a el, por lo
     # que si en el bucle, alguna vez se divide el numero, quiere decir que no es
     # primo
-    #cambio1
+    #Comentario cambio 1
     if (numero<=1):
         return False
 
